@@ -1,0 +1,336 @@
+:root {
+    /* Ratings */
+    --LimeGreen: hsl(163, 72%, 41%);
+    --BrightRed: hsl(356, 69%, 56%);
+
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --YouTube: hsl(348, 97%, 39%);
+
+    /* Dark Theme */
+    --ToggleD: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+
+    /* Light Theme */
+    --Toggle: hsl(230, 22%, 74%);
+
+    /* Neutral */
+    /* Dark Theme */
+    --Very-Dark-BlueBG: hsl(230, 17%, 14%);
+    --Very-Dark-Blue-TopBG: hsl(232, 19%, 15%);
+    --Dark-Desaturated-Blue: hsl(228, 28%, 20%);
+    --Desaturated-Blue: hsl(228, 34%, 66%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Light Theme */
+    --White-BG: hsl(0, 0%, 100%);
+    --Very-Pale-Blue: hsl(225, 100%, 98%);
+    --Light-Grayish-Blue: hsl(227, 47%, 96%);
+    --Dark-Grayish-Blue: hsl(228, 12%, 44%);
+    --Very-Dark-Blue: hsl(230, 17%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 110vh;
+    background: linear-gradient(to top, var(--Very-Dark-BlueBG) 70%, var(--Very-Dark-Blue-TopBG) 30%);
+    color: var(--White);
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+html {
+    --scrollbarBG: hsl(228, 34%, 66%);
+    --thumbBG: #000;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body.light {
+    color: var(--Very-Dark-Blue);
+    background: linear-gradient(to top, var(--White-BG) 70%, var(--Very-Pale-Blue) 30%);
+}
+
+h1 {
+    color: var(--White);
+}
+
+h1.black {
+    color: var(--Very-Dark-Blue);
+}
+
+p.black {
+    color: var(--Very-Dark-Blue);
+}
+
+p {
+    color: var(--Desaturated-Blue);
+}
+
+.container {
+    width: 80%;
+    margin: 3rem auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+/* Switch for the theme-changer */
+.switch {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    position: relative;
+    right: 5rem;
+}
+
+.switch p {
+    position: relative;
+    top: 2.5px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+label {
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #31d06c, #2bb9cf);
+}
+
+label:before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #353956;
+    transition: 0.4s;
+}
+
+label.active:before {
+    left: 23px;
+    background: var(--White);
+}
+
+label.active {
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    border-radius: 20px;
+    background: var(--Toggle);
+}
+
+
+/* Menu */
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.menu-title p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--Desaturated-Blue);
+}
+
+/* Card */
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.property-card.white {
+    background-color: var(--Very-Pale-Blue);
+}
+
+.property-card {
+    background-color: var(--Dark-Desaturated-Blue);
+    border-radius: 5px;
+    width: 25%;
+    padding: 2rem;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.property-card:hover {
+    background-color: var(--Dark-Grayish-Blue);
+}
+
+.property-card.white:hover {
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.property-card span {
+    font-size: 1.4rem;
+    color: var(--Desaturated-Blue);
+    font-weight: 400;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.followers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.followers h1 {
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+.followers {
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+.followers p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.facebook {
+    border-top: 4px solid var(--Facebook);
+}
+
+.twitter {
+    border-top: 4px solid var(--Twitter);
+}
+
+.instagram {
+    border-top: 4px solid hsl(329, 70%, 58%);
+}
+
+.youtube {
+    border-top: 4px solid var(--YouTube);
+}
+
+.red p {
+    color: var(--BrightRed);
+    font-weight: 700;
+}
+
+
+.green p {
+    color: var(--LimeGreen);
+    font-weight: 700;
+}
+
+/* Overview  Cards*/
+.overview-title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.overview {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+/* Regular Cards */
+.regular-cards {
+    background-color: var(--Dark-Desaturated-Blue);
+    border-radius: 5px;
+    width: 25%;
+    padding: 2rem;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.regular-cards:hover {
+    background-color: var(--Dark-Grayish-Blue);
+}
+
+.regular-cards.shine:hover {
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.regular-cards.shine {
+    background-color: var(--Very-Pale-Blue);
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile p {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.number {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.number span {
+    font-size: 1.2em;
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Social Media Dashboard__Frontend Mentor Challenge</title>
+
+    <!-- links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <!--Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Menu -->
+        <div class="menu">
+            <div class="menu-title">
+                <h1 class="heading">Social Media Dashboard</h1>
+                <p>Total Followers: 23,004</p>
+            </div>
+            <div class="switch">
+                <p>Dark Mode</p>
+                <div>
+                    <label id="theme-changer"></label>
+                </div>
+            </div>
+        </div>
+        <!-- Cards -->
+        <div class="cards">
+            <div class="property-card facebook">
+                <div class="user">
+                    <img src="images/icon-facebook.svg" alt="facebook">
+                    <span>@nathanf</span>
+                </div>
+                <div class="followers">
+                    <h1 class="heading">1987</h1>
+                    <p>followers</p>
+                </div>
+                <div class="status">
+                    <img src="images/icon-up.svg" alt="up">
+                    <span class="green">
+                        <p>12 Today</p>
+                    </span>
+                </div>
+            </div>
+            <div class="property-card twitter">
+                <div class="user">
+                    <img src="images/icon-twitter.svg" alt="twitter">
+                    <span>@nathanf</span>
+                </div>
+                <div class="followers">
+                    <h1 class="heading">1044</h1>
+                    <p>followers</p>
+                </div>
+                <div class="status">
+                    <img src="images/icon-up.svg" alt="up">
+                    <span class="green">
+                        <p>99 Today</p>
+                    </span>
+                </div>
+            </div>
+            <div class="property-card instagram">
+                <div class="user">
+                    <img src="images/icon-instagram.svg" alt="facebook">
+                    <span>@realnathanf</span>
+                </div>
+                <div class="followers">
+                    <h1 class="heading">111k</h1>
+                    <p>followers</p>
+                </div>
+                <div class="status">
+                    <img src="images/icon-up.svg" alt="up">
+                    <span class="green">
+                        <p>1099 Today</p>
+                    </span>
+                </div>
+            </div>
+            <div class="property-card youtube">
+                <div class="user">
+                    <img src="images/icon-youtube.svg" alt="facebook">
+                    <span>@Nathan F.</span>
+                </div>
+                <div class="followers">
+                    <h1 class="heading">8239</h1>
+                    <p>Subscribers</p>
+                </div>
+                <div class="status">
+                    <img src="images/icon-down.svg" alt="up">
+                    <span class="red">
+                        <p>144 Today</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- Overview Cards -->
+        <div class="overview-title">
+            <h1 class="heading">Overview - Today</h1>
+        </div>
+        <div class="overview">
+            <div class="cont">
+                <div class="regular-cards">
+                    <div class="profile">
+                        <div>
+                            <p>Page Views</p>
+                        </div>
+                        <div>
+                            <img src="images/icon-facebook.svg" alt="facebook">
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div>
+                            <h1 class="heading">87</h1>
+                        </div>
+                        <div class="status">
+                            <img src="images/icon-up.svg" alt="up">
+                            <span class="green">
+                                <p>3%</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="regular-cards">
+                    <div class="profile">
+                        <div>
+                            <p>Likes</p>
+                        </div>
+                        <div>
+                            <img src="images/icon-facebook.svg" alt="facebook">
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div>
+                            <h1 class="heading">52</h1>
+                        </div>
+                        <div class="status">
+                            <img src="images/icon-down.svg" alt="down">
+                            <span class="red">
+                                <p>2%</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="regular-cards">
+                    <div class="profile">
+                        <div>
+                            <p>Likes</p>
+                        </div>
+                        <div>
+                            <img src="images/icon-instagram.svg" alt="facebook">
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div>
+                            <h1 class="heading">5462</h1>
+                        </div>
+                        <div class="status">
+                            <img src="images/icon-up.svg" alt="up">
+                            <span class="green">
+                                <p>2257%</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="regular-cards">
+                    <div class="profile">
+                        <div>
+                            <p>Profile Views</p>
+                        </div>
+                        <div>
+                            <img src="images/icon-instagram.svg" alt="facebook">
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div>
+                            <h1 class="heading">52k</h1>
+                        </div>
+                        <div class="status">
+                            <img src="images/icon-up.svg" alt="up">
+                            <span class="green">
+                                <p>1375%</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="regular-cards">
+                    <div class="profile">
+                        <div>
+                            <p>Retweets</p>
+                        </div>
+                        <div>
+                            <img src="images/icon-twitter.svg" alt="facebook">
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div>
+                            <h1 class="heading">87</h1>
+                        </div>
+                        <div class="status">
+                            <img src="images/icon-up.svg" alt="up">
+                            <span class="green">
+                                <p>303%</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="regular-cards">
+                    <div class="profile">
+                        <div>
+                            <p>Likes</p>
+                        </div>
+                        <div>
+                            <img src="images/icon-twitter.svg" alt="facebook">
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div>
+                            <h1 class="heading">507</h1>
+                        </div>
+                        <div class="status">
+                            <img src="images/icon-up.svg" alt="up">
+                            <span class="green">
+                                <p>553%</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="regular-cards">
+                    <div class="profile">
+                        <div>
+                            <p>Likes</p>
+                        </div>
+                        <div>
+                            <img src="images/icon-youtube.svg" alt="facebook">
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div>
+                            <h1 class="heading">107</h1>
+                        </div>
+                        <div class="status">
+                            <img src="images/icon-down.svg" alt="down">
+                            <span class="red">
+                                <p>10%</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="regular-cards">
+                    <div class="profile">
+                        <div>
+                            <p>Total Views</p>
+                        </div>
+                        <div>
+                            <img src="images/icon-youtube.svg" alt="facebook">
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div>
+                            <h1 class="heading">1407</h1>
+                        </div>
+                        <div class="status">
+                            <img src="images/icon-down.svg" alt="down">
+                            <span class="red">
+                                <p>12%</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+    <script src=" js/app.js"> </script>
+
+</body>
+
+</html>

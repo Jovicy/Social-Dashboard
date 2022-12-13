@@ -1,0 +1,60 @@
+/* Responsive asin Media-query */
+@media (max-width: 991px) {
+    body {
+        background: var(--Very-Dark-BlueBG);
+    }
+    
+    body.light {
+        background: var(--White-BG);
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .property-card {
+        width: 100%;
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .regular-cards {
+        width: 100%;
+    }
+
+    .switch {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-title h1 {
+        font-size: 2rem;
+    }
+    
+    .menu-title p {
+        font-size: 1.2rem;
+    }
+
+    .overview-title h1{
+        font-size: 2rem;
+    }
+
+    .switch p {
+        visibility: hidden;
+    }
+}
